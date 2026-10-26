@@ -40,6 +40,13 @@ Links `mailto:` recebem automaticamente o texto acessível "Enviar e-mail".
 
 `src/App.tsx` renderiza os dados e `src/styles.css` cuida da aparência.
 
+## Cores
+
+A paleta (verde floresta com âmbar) fica nas variáveis do `:root`, no topo de `src/styles.css`, e vale
+para as duas páginas. Fora do CSS, as mesmas cores aparecem em `theme-color` (`index.html` e
+`qr/index.html`), `public/qr/manifest.webmanifest`, `public/favicon.svg`, nos ícones de serviço em
+`public/icons/` e no ícone do app gerado por `scripts/generate-qr-assets.mjs`.
+
 ## Foto
 
 Salve a foto como **`public/images/profile.jpg`** (nome exato) e faça commit. Prefira um recorte quadrado
