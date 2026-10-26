@@ -5,7 +5,7 @@ Brand marks remain the property of their respective owners and do not imply endo
 
 - LinkedIn, GitHub, ORCID: Simple Icons 11.0.0, CC0 1.0.
   https://github.com/simple-icons/simple-icons/tree/11.0.0
-  Original viewBoxes and paths are preserved; a fill color is added to match the page palette.
+  Original viewBoxes and paths are preserved; a white fill is added for the brand-colored tiles.
   License retained in public/icons/simple-icons-license.txt.
 - Plataforma Lattes: Academicons by James Walsh, SIL Open Font License 1.1 for the glyph.
   https://github.com/jpswalsh/academicons/blob/master/svg/lattes.svg

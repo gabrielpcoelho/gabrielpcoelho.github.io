@@ -9,7 +9,7 @@
   --on-accent: #ffffff;
   --surface: #ffffff;
   --surface-hover: #f0f6f2;
-  --surface-icon: #e6efe9;
+  --surface-icon: #1f7a57;
   --control: #ffffff;
   --control-active: #d7e9de;
   --line: #15241e1a;
@@ -108,9 +108,12 @@ h1 { margin: 0; font-size: clamp(1.45rem, 5.4vw, 1.85rem); font-weight: 650; let
   .language-selector button:hover { color: var(--text); }
 }
 .service-icon { flex: 0 0 41px; width: 41px; height: 41px; display: grid; place-items: center; border-radius: 12px; background: var(--surface-icon); }
-.service-icon--orcid { background: #e3f0e6; }
-.service-icon--lattes { background: #e2ebef; }
-.service-icon--email { background: #f6ead2; }
+/* Official brand colors (Simple Icons 11.0.0) where available; white glyphs. */
+.service-icon--linkedin { background: #0a66c2; }
+.service-icon--github { background: #181717; }
+.service-icon--orcid { background: #a6ce39; }
+.service-icon--lattes { background: #1d5aa6; }
+.service-icon--email { background: #d08a1e; }
 .service-icon img { display: block; object-fit: contain; }
 .contact-copy { display: grid; gap: 3px; min-width: 0; flex: 1; }
 .service-name { font-size: 0.93rem; font-weight: 600; line-height: 1.35; }
