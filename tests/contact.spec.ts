@@ -4,9 +4,10 @@ import AxeBuilder from '@axe-core/playwright';
 const destinations = [
   'https://www.linkedin.com/in/gabriel-p-coelho/',
   'https://github.com/gabrielpcoelho',
+  'https://orcid.org/0009-0004-6029-5557',
   'mailto:gabrielpereiracoelho18@gmail.com',
 ];
-const brands = ['LinkedIn', 'GitHub', 'E-mail'];
+const brands = ['LinkedIn', 'GitHub', 'ORCID', 'E-mail'];
 
 test('approved destinations, order, native navigation and local icons', async ({ page }) => {
   await page.goto('/');
@@ -19,7 +20,7 @@ test('approved destinations, order, native navigation and local icons', async ({
     const icon = links.nth(i).locator('img');
     expect(await icon.evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0)).toBeTruthy();
   }
-  await expect(links.nth(2)).toHaveAccessibleName(/Enviar e-mail/);
+  await expect(links.last()).toHaveAccessibleName(/Enviar e-mail/);
   await page.route(destinations[1], route => route.fulfill({ contentType: 'text/html', body: '<h1>Destination reached</h1>' }));
   await links.nth(1).click();
   await expect(page).toHaveURL(destinations[1]);
@@ -39,7 +40,7 @@ test('English selection translates interface and every fresh load resets to Port
   await expect(page.getByText('Generative AI Researcher · MSc Student in Computer Science')).toBeVisible();
   await expect(page.getByRole('group', { name: 'Page language' })).toBeVisible();
   await expect(page.getByRole('navigation', { name: 'Contact profiles' })).toBeVisible();
-  for (const text of ['Professional connections', 'Code and projects']) {
+  for (const text of ['Professional connections', 'Code and projects', 'Research identity']) {
     await expect(page.getByText(text, { exact: true })).toBeVisible();
   }
   await expect(page.getByRole('link').first()).toHaveAccessibleName(/Visit profile/);

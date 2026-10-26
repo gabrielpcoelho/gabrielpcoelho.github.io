@@ -46,7 +46,7 @@ test('QR pixels contain exact contact URL; portrait, navigation and memory-only 
   expect(await page.evaluate(() => [localStorage.length, sessionStorage.length])).toEqual([0, 0]);
   await page.getByRole('link', { name: 'Abrir contatos' }).click();
   await expect(page).toHaveURL(/\/$/);
-  await expect(page.getByRole('navigation').getByRole('link')).toHaveCount(3);
+  await expect(page.getByRole('navigation').getByRole('link')).toHaveCount(4);
   expect(await page.evaluate(() => navigator.serviceWorker.controller)).toBeNull();
 });
 

@@ -29,5 +29,6 @@ export const copy = {
 export const contacts: Contact[] = [
   { id: 'linkedin', name: 'LinkedIn', href: 'https://www.linkedin.com/in/gabriel-p-coelho/', description: { 'pt-BR': 'Conexões profissionais', en: 'Professional connections' } },
   { id: 'github', name: 'GitHub', href: 'https://github.com/gabrielpcoelho', description: { 'pt-BR': 'Código e projetos', en: 'Code and projects' } },
+  { id: 'orcid', name: 'ORCID', href: 'https://orcid.org/0009-0004-6029-5557', description: { 'pt-BR': 'Identidade de pesquisa', en: 'Research identity' } },
   { id: 'email', name: 'E-mail', href: 'mailto:gabrielpereiracoelho18@gmail.com', description: { 'pt-BR': 'gabrielpereiracoelho18@gmail.com', en: 'gabrielpereiracoelho18@gmail.com' } },
 ];
