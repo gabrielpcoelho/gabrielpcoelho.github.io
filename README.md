@@ -33,7 +33,7 @@ Capturas de tela ficam em `test-results/` e o relatório em `playwright-report/`
 
 Tudo fica em **`src/data/profile.ts`**: nome, iniciais, descrição (`role`), textos da interface e a lista
 de contatos. A ordem do array é a ordem na tela. Cada contato tem `id`, `name`, `href` e uma descrição
-em `pt-BR` e `en`; mantenha as duas traduções. Para adicionar um serviço (por exemplo Lattes),
+em `pt-BR` e `en`; mantenha as duas traduções. Para adicionar um serviço,
 coloque o SVG correspondente em `public/icons/<id>.svg`, registre a origem e a licença em
 `public/icons/sources.json` e `THIRD_PARTY_NOTICES.md`, e atualize a lista em `tests/contact.spec.ts`.
 Links `mailto:` recebem automaticamente o texto acessível "Enviar e-mail".

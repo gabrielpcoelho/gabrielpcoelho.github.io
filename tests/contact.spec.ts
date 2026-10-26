@@ -5,9 +5,10 @@ const destinations = [
   'https://www.linkedin.com/in/gabriel-p-coelho/',
   'https://github.com/gabrielpcoelho',
   'https://orcid.org/0009-0004-6029-5557',
+  'https://lattes.cnpq.br/4564111342443552',
   'mailto:gabrielpereiracoelho18@gmail.com',
 ];
-const brands = ['LinkedIn', 'GitHub', 'ORCID', 'E-mail'];
+const brands = ['LinkedIn', 'GitHub', 'ORCID', 'Lattes', 'E-mail'];
 
 test('approved destinations, order, native navigation and local icons', async ({ page }) => {
   await page.goto('/');
@@ -40,7 +41,7 @@ test('English selection translates interface and every fresh load resets to Port
   await expect(page.getByText('Generative AI Researcher · MSc Student in Computer Science')).toBeVisible();
   await expect(page.getByRole('group', { name: 'Page language' })).toBeVisible();
   await expect(page.getByRole('navigation', { name: 'Contact profiles' })).toBeVisible();
-  for (const text of ['Professional connections', 'Code and projects', 'Research identity']) {
+  for (const text of ['Professional connections', 'Code and projects', 'Research identity', 'Academic background']) {
     await expect(page.getByText(text, { exact: true })).toBeVisible();
   }
   await expect(page.getByRole('link').first()).toHaveAccessibleName(/Visit profile/);

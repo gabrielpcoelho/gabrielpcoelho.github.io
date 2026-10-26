@@ -108,6 +108,7 @@ h1 { margin: 0; font-size: clamp(1.45rem, 5.4vw, 1.85rem); font-weight: 650; let
 }
 .service-icon { flex: 0 0 41px; width: 41px; height: 41px; display: grid; place-items: center; border-radius: 12px; background: var(--surface-icon); }
 .service-icon--orcid { background: #1f3326; }
+.service-icon--lattes { background: #1f2d33; }
 .service-icon--email { background: #2e2a1b; }
 .service-icon img { display: block; object-fit: contain; }
 .contact-copy { display: grid; gap: 3px; min-width: 0; flex: 1; }
