@@ -1,0 +1,26 @@
+.qr-page { max-width: 440px; padding-bottom: max(28px, env(safe-area-inset-bottom)); }
+.qr-page .language-bar { margin-bottom: 9px; }
+.qr-profile { margin-bottom: 22px; }
+.qr-profile .avatar-frame { margin-bottom: 12px; }
+.qr-profile .avatar { width: 88px; height: 88px; }
+.qr-profile h1 { font-size: clamp(1.3rem, 5.4vw, 1.7rem); }
+.qr-profile .role { font-size: .8rem; }
+.qr-card { background: #fff; color: #101522; padding: 20px 14px 13px; border-radius: 22px; text-align: center; }
+.qr-instruction { margin: 0 0 7px; font-size: .85rem; font-weight: 600; line-height: 1.5; overflow-wrap: anywhere; }
+.qr-code { display: block; width: 100%; max-width: 320px; height: auto; margin: 0 auto; image-rendering: pixelated; }
+.qr-address { margin: 6px 0 0; color: #44506a; font-size: .75rem; letter-spacing: .025em; overflow-wrap: anywhere; }
+.qr-contacts { display: flex; align-items: center; justify-content: center; gap: 12px; min-height: 52px; margin-top: 16px; padding: 12px; border-radius: 14px; background: #c9b6f4; color: #171126; font-size: .9rem; font-weight: 650; text-decoration: none; overflow-wrap: anywhere; }
+.qr-contacts svg { flex: 0 0 18px; }
+.offline-status { margin: 14px 0 4px; text-align: center; color: #b2b6cb; font-size: .75rem; line-height: 1.5; }
+.qr-retry { display: block; width: 100%; min-height: 44px; border: 1px solid #ffffff30; border-radius: 10px; background: #20263c; color: #f3f1fb; margin-top: 8px; padding: 10px; cursor: pointer; }
+.install-guide { color: #bcb5d5; font-size: .78rem; line-height: 1.7; overflow-wrap: anywhere; }
+.install-guide summary { cursor: pointer; text-align: center; min-height: 44px; padding: 12px 0; list-style-position: inside; }
+.install-guide summary:focus-visible { outline: 3px solid #71e3d4; outline-offset: 3px; border-radius: 8px; }
+.install-guide p { margin: 8px 0 12px; }
+@media (hover: hover) { .qr-contacts:hover { background: #dacdf7; } }
+@media (min-width: 600px) { .qr-page { padding-top: 24px; } }
+@media (max-width: 350px) { .qr-card { padding-inline: 8px; } }
+@container (max-width: 220px) {
+  .qr-contacts { gap: 4px; padding-inline: 6px; font-size: .78rem; }
+  .qr-profile h1 { overflow-wrap: anywhere; }
+}
